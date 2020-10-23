@@ -296,6 +296,32 @@ button:active{
     border-radius: 20px;
     padding: 30px;
 }
+/* COMMITS DONE HERE */
+.circle{
+    position: relative;
+    overflow: hidden; 
+    width: 200px;
+    height: 200px;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    border-right: 2px solid gray;
+    padding: 10px;
+    shape-outside: circle();
+}
+.circle img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.abouttext{
+    text-align: center;
+}
 .aboutme h1{
     display: flex;
     color: linen;
@@ -309,7 +335,7 @@ button:active{
 }
 
 .section2 .aboutme p{
-    display: flex;
+/*     display: flex; */
     font-family: 'Sansita Swashed', cursive;
     font-size: 18px;
     justify-content: center;
