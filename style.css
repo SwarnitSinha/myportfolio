@@ -13,7 +13,7 @@ body{
     
 }
 a{
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 ul{
     list-style-type: none;
@@ -393,7 +393,10 @@ p, h1,h3,h2, span{
 }
 .grid-item:nth-child(2),
 .grid-item:nth-child(3),
-.grid-item:nth-child(4){
+.grid-item:nth-child(4),
+.grid-item:nth-child(5),
+.grid-item:nth-child(6),
+.grid-item:nth-child(7){
     display: grid;
     justify-self: start;
     text-align: center;
@@ -443,21 +446,46 @@ p, h1,h3,h2, span{
     background: #e91e63;
 }
  .box:nth-child(3) h1{
-    box-shadow: 0 0 0 0 #23e629;
-    background: #23e629;
-}
-.box:nth-child(3):hover h1{
-    box-shadow: 0 0 0 400px #23e629;
-    background: #23e629;
-}
-.box:nth-child(4) h1{
     box-shadow: 0 0 0 0 purple;
     background: purple;
 }
- .box:nth-child(4):hover h1{
+.box:nth-child(3):hover h1{
     box-shadow: 0 0 0 400px purple;
     background: purple;
 }
+.box:nth-child(4) h1{
+    box-shadow: 0 0 0 0 #e91e63;
+    background: #e91e63;
+}
+ .box:nth-child(4):hover h1{
+    box-shadow: 0 0 0 400px #e91e63;
+    background: #e91e63;
+}
+/* Add hover effect to new cards */
+/* .box:nth-child(5) h1{
+    box-shadow: 0 0 0 0 purple;
+    background: purple;
+}
+.box:nth-child(5):hover h1{
+    box-shadow: 0 0 0 400px purple;
+    background: purple;
+}
+.box:nth-child(6) h1{
+    box-shadow: 0 0 0 0 #e91e63;
+    background: #e91e63;
+}
+.box:nth-child(6):hover h1{
+    box-shadow: 0 0 0 400px #e91e63;
+    background: #e91e63;
+}
+.box:nth-child(7) h1{
+    box-shadow: 0 0 0 0 purple;
+    background: purple;
+}
+.box:nth-child(7):hover h1{
+    box-shadow: 0 0 0 400px purple;
+    background: purple;
+} */
  .box .content{
     position: relative;
     z-index: 1;
@@ -512,6 +540,31 @@ p, h1,h3,h2, span{
     height: 80%;
     width: 80%;
 }
+/* 3 new added container */
+.grid-container .box-5{
+    grid-column:1/5;
+    grid-row: 6/10;
+    justify-self: end;
+    align-self: center;
+    height: 80%;
+    width: 80%;
+}
+.grid-container .box-6{
+    grid-column:5/9;
+    grid-row: 6/10;
+    justify-self: center;
+    align-self: center;
+    height: 80%;
+    width: 80%;
+}
+.grid-container .box-7{
+    grid-column:9/13;
+    grid-row: 6/10;
+    justify-self: start;
+    align-self: center;
+    height: 80%;
+    width: 80%;
+}
 .content p{
     font-size: 1.2rem;
     font-family: calibri;
@@ -550,7 +603,6 @@ p, h1,h3,h2, span{
         height: 80%;
         width: 80%;
     }
-
     .grid-container .box-4 {
         grid-column: 2/12;
         grid-row: 10/14;
@@ -559,6 +611,33 @@ p, h1,h3,h2, span{
         height: 80%;
         width: 80%;
     }
+
+/* Media query for new added card */
+    .grid-container .box-5 {
+        grid-column: 2/12;
+        grid-row: 14/18;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .grid-container .box-6 {
+        grid-column: 2/12;
+        grid-row: 18/22;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .grid-container .box-7 {
+        grid-column: 2/12;
+        grid-row: 22/26;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+   
 }
 @media screen and (max-width:475px){
     .grid-container .box-2 {
