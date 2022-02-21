@@ -13,7 +13,7 @@ body{
     
 }
 a{
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 ul{
     list-style-type: none;
@@ -21,19 +21,19 @@ ul{
 }
 nav{
     display: flex;
-    height: 3rem;
+    height: 3.2rem;
     background-color: #f8f8f8;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     /* margin-right: 50px; */
     top: 0;
-    left: 2.5%;
-    width: 95%; 
-    margin-top: 10px;
+    left: 0%;
+    width: 100%; 
+    margin-top: 0px;
     z-index: 1000;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
-    border-radius: 5%;
+    border-radius: 2px;
 
 }
 nav .logo{
@@ -57,7 +57,7 @@ nav ul{
     padding: 0 8%;
 }
 nav ul li{
-    margin: 0 10px;
+    margin: 0 6px;
 }
 nav ul li a{
     color: #404040;
@@ -65,11 +65,11 @@ nav ul li a{
     margin: 0 10px;
     font-weight: 500;
     font-size: 1.2rem;
-    letter-spacing: .8px;
+    letter-spacing: .6px;
 }
 nav ul li a:hover{
     color: black;
-    font-weight: bolder;
+    font-weight: 500;
 }
 
 
@@ -109,7 +109,7 @@ nav ul li a:hover{
         margin: 50px 0;
         line-height: 30px;
     }
-    nav li:nth-child(3){
+    nav li:nth-child(5){
         border: none;
     }
     nav a{
@@ -203,12 +203,13 @@ nav ul li a:hover{
     }
     
     .intro-container h1:nth-child(2){
-        display: flex;
+        display: inline;
         justify-content: center;
-        text-shadow: 0 0 2px #e91e63;
+        font-size: 36px;
+        /* text-shadow: 0 0 2px #e91e63; */
     }
     .intro-container{
-        transform: translateX(-50%) scale(0.9);   
+        transform: translateX(-50%);   
     }
     .intro-container p:nth-child(2){
         font-size: 12px;
@@ -328,21 +329,43 @@ button:active{
 }
 /* ----media querry for sec 2----- */
 @media screen and (max-width:768px){
+
     .section2 .aboutme{
         width: 90%;
         height: auto;
         background-color: rgba(0, 0, 0, 0.9);
     }
+    .circle{
+        position: relative;
+        overflow: hidden; 
+        width: 100px;
+        height: 100px;
+        float: top;
+        border-radius: 50%;
+        margin: 20px;
+        border-right: 2px solid gray;
+        padding: 10px;
+        shape-outside: circle();
+    }
+    .circle img{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid gray;
+    }
+
     .section2 .aboutme h1{
         margin-bottom: 2rem;
         border-bottom: 1px solid gray;
     }
     .section2 .aboutme p{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
-    .contact-me button{
-        width: 100%;
-    }
+    
 }
 
 
@@ -652,9 +675,6 @@ p, h1,h3,h2, span{
     background-image: linear-gradient(339deg, rgba(47, 47, 47,0.02) 0%, rgba(47, 47, 47,0.02) 42%,transparent 42%, transparent 99%,rgba(17, 17, 17,0.02) 99%, rgba(17, 17, 17,0.02) 100%),linear-gradient(257deg, rgba(65, 65, 65,0.02) 0%, rgba(65, 65, 65,0.02) 11%,transparent 11%, transparent 92%,rgba(53, 53, 53,0.02) 92%, rgba(53, 53, 53,0.02) 100%),linear-gradient(191deg, rgba(5, 5, 5,0.02) 0%, rgba(5, 5, 5,0.02) 1%,transparent 1%, transparent 45%,rgba(19, 19, 19,0.02) 45%, rgba(19, 19, 19,0.02) 100%),linear-gradient(29deg, rgba(28, 28, 28,0.02) 0%, rgba(28, 28, 28,0.02) 33%,transparent 33%, transparent 40%,rgba(220, 220, 220,0.02) 40%, rgba(220, 220, 220,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
 }
 }
-
-
-
 
 
 /* <----------------- media on grid end here-----------> */

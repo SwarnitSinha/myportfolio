@@ -40,12 +40,12 @@
 
 /* Style project cards using class firstProject / secondProject */
 .firstProject{
-    grid-column:1/5;
+    grid-column:2/5;
     grid-row: 2/6;
     justify-self: end;
     align-self: center;
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
 }
 
 .secondProject{
@@ -53,41 +53,41 @@
     grid-row: 2/6;
     justify-self: center;
     align-self: center;
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
 }
 .thirdProject{
-    grid-column:9/13;
+    grid-column:9/12;
     grid-row: 2/6;
     justify-self: start;
     align-self: center;
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
 }
 /* 3 new added container */
 .fourthProject{
-    grid-column:1/5;
+    grid-column:2/5;
     grid-row: 6/10;
     justify-self: end;
     align-self: center;
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
 }
 .fifthProject{
     grid-column:5/9;
     grid-row: 6/10;
     justify-self: center;
     align-self: center;
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
 }
 .sixthProject{
-    grid-column:9/13;
+    grid-column:9/12;
     grid-row: 6/10;
-    justify-self: start;
-    align-self: center;
-    height: 80%;
-    width: 80%;
+    /* justify-self: start; */
+    /* align-self: center; */
+    height: 100%;
+    width: 100%;
 }
 
 .projectSection .card .icon {
@@ -258,3 +258,178 @@
     /* background-color: #2c73df; */
     visibility: visible;
 }
+
+/* -------media querry on grid--------- */
+
+@media screen and (max-width:1024px){
+    .project-grid-container .firstProject {
+        grid-column: 2/6;
+        grid-row: 2/6;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .project-grid-container .secondProject {
+        grid-column: 8/12;
+        grid-row: 2/6;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .project-grid-container .thirdProject {
+        grid-column: 2/6;
+        grid-row: 6/10;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+
+/* Media query for new added card */
+    .project-grid-container .fourthProject {
+        grid-column: 8/12;
+        grid-row: 6/10;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .project-grid-container .fifthProject {
+        grid-column: 2/6;
+        grid-row: 10/14;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .project-grid-container .sixthProject {
+        grid-column: 8/12;
+        grid-row: 10/14;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+   
+}
+
+@media screen and (max-width:650px){
+    .project-grid-container .firstProject {
+        grid-column: 2/12;
+        grid-row: 2/6;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .project-grid-container .secondProject {
+        grid-column: 2/12;
+        grid-row: 6/10;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .project-grid-container .thirdProject {
+        grid-column: 2/12;
+        grid-row: 10/14;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+
+/* Media query for new added card */
+    .project-grid-container .fourthProject {
+        grid-column: 2/12;
+        grid-row: 14/18;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .project-grid-container .fifthProject {
+        grid-column: 2/12;
+        grid-row: 18/22;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .project-grid-container .sixthProject {
+        grid-column: 2/12;
+        grid-row: 22/26;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+   
+}
+@media screen and (max-width:475px){
+    .project-grid-container .firstProject {
+        grid-column: 1/13;
+        grid-row: 2/6;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .project-grid-container .secondProject {
+        grid-column: 1/13;
+        grid-row: 6/10;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .project-grid-container .thirdProject {
+        grid-column: 1/13;
+        grid-row: 10/14;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+
+/* Media query for new added card */
+    .project-grid-container .fourthProject {
+        grid-column: 1/13;
+        grid-row: 14/18;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .project-grid-container .fifthProject {
+        grid-column: 1/13;
+        grid-row: 18/22;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+    .project-grid-container .sixthProject {
+        grid-column: 1/13;
+        grid-row: 22/26;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 80%;
+    }
+   
+    /* .firstProject,
+.secondProject,
+.thirdProject,
+.fourthProject,
+.fifthProject,
+.sixthProject{
+    background-image: linear-gradient(339deg, rgba(47, 47, 47,0.02) 0%, rgba(47, 47, 47,0.02) 42%,transparent 42%, transparent 99%,rgba(17, 17, 17,0.02) 99%, rgba(17, 17, 17,0.02) 100%),linear-gradient(257deg, rgba(65, 65, 65,0.02) 0%, rgba(65, 65, 65,0.02) 11%,transparent 11%, transparent 92%,rgba(53, 53, 53,0.02) 92%, rgba(53, 53, 53,0.02) 100%),linear-gradient(191deg, rgba(5, 5, 5,0.02) 0%, rgba(5, 5, 5,0.02) 1%,transparent 1%, transparent 45%,rgba(19, 19, 19,0.02) 45%, rgba(19, 19, 19,0.02) 100%),linear-gradient(29deg, rgba(28, 28, 28,0.02) 0%, rgba(28, 28, 28,0.02) 33%,transparent 33%, transparent 40%,rgba(220, 220, 220,0.02) 40%, rgba(220, 220, 220,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+} */
+}
+
+
+
+/* <----------------- media on grid end here-----------> */
