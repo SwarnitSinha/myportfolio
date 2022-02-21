@@ -26,6 +26,8 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    background: #fff;
+    border-radius: 4px;
     color: black;
     padding: 40px;
     font-family: 'Merriweather', serif;
@@ -33,6 +35,10 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   
+  .skill-content:hover{
+    transform: scale(1.1);
+  }
+
   h1 {
     font-weight: 900;
     text-align: center;
