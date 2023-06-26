@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     /* min-height: 400px;
     min-width: 1800px; */
 
@@ -31,8 +31,9 @@
     color: black;
     padding: 40px;
     font-family: 'Merriweather', serif;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 15px 20px 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 30%
   }
   
   .skill-content:hover{
